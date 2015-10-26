@@ -12,13 +12,19 @@
   </head>
   <body>
     <div class="grid-frame vertical">
-      <div class="grid-content shrink" style="padding: 0;">
-        <ul class="primary condense menu-bar">
-          <li><a><strong>Micah Courey</strong></a></li>
-          <li><a>About Me</a></li>
-          <li><a>Portfolio</a></li>
-          <li><a>Contact Me</a></li>
+      <div class="menu-group dark">
+        <div class="menu-group-left">
+        <ul class="condense dark menu-bar left">
+          <li ui-sref-active="is-active"><a ui-sref="home"><strong>Micah Courey</strong></a></li>
         </ul>
+      </div>
+      <div class="menu-group-right">
+        <ul class="condense dark menu-bar right">
+          <li ui-sref-active="is-active"><a ui-sref="about">About Me</a></li>
+          <li ui-sref-active="is-active"><a ui-sref="portfolio">Portfolio</a></li>
+          <li ui-sref-active="is-active"><a ui-sref="contact">Contact Me</a></li>
+        </ul>
+      </div>
       </div>
       <div ui-view class="grid-content">
       </div>
